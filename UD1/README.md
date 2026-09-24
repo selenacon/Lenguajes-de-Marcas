@@ -21,11 +21,21 @@ Un lenguaje de marcas es aquel que permite organizar información mediante una s
    ```bash
    sudo apt install git
    ```
-4. Crear repositorio, añadir código y hacer commit.
+4. Configurar usuario de GitHub:
    ```bash
-   temp
+   git config --global user.name "Tu Usuario"
+   git config --global user.email tu@email.com
    ```
-
+5. Crear repositorio y añadir los ficheros:
+   ```bash
+   git init
+   git add .
+   ```
+6. Hacer commit y publicar los cambios:
+   ```bash
+   git commit -m "Mensaje"
+   git push origin main
+   ```
 ## Plugins instalados
 | Plugin | Imagen | Uso |
 | --- | --- | --- |
