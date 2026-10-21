@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Horario</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table, table td, table th {
+            border: midnightblue 1px solid;
+            padding: 0.5em;
+            border-collapse: collapse;
+        }
+
+        #outline {
+            border: powderblue outset 5px;
+            border-radius: 5px;
+            position: fixed;
+            box-shadow: 5px 10px 15px darkgray;
+        }
+        table th {
+            text-align: center;
+            padding: 1em;
+            background:linear-gradient(to top, powderblue, aliceBlue);
+        }
+        .hora {
+            color:grey;
+            top: 0px;
+            text-align: center;
+        }
+        #recreo {
+            color: grey;
+            text-align: center;
+            font-style: italic;
+        }
+        #tarde td {
+            border-right: transparent;
+        }
+        .BD {
+            background:linear-gradient(to top, sandybrown, papayawhip);
+        }
+        .SSI {
+            background:linear-gradient(to top, steelblue, powderblue);
+        }
+    </style>
+    <body>
+        <div id="outline">
+        <table>
+            <tr><th></th><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
+            <tr><td class="hora">8:10</td><td rowspan="2" class="BD">Bases de Datos</td><td rowspan="3">Programación</td><td rowspan="2">Lenguaje de Marcas</td><td>Sostenibilidad</td><td rowspan="3" class="BD">Bases de Datos</td></tr>
+            <tr><td class="hora">9:00</td><td rowspan="2" class="SSI">Sistemas</td></tr>
+            <tr><td class="hora">9:50</td><td rowspan="2" class="SSI">Sistemas</td><td rowspan="2">FOL</td></tr>
+            <tr><td class="hora">10:40</td><td class="SSI">Sistemas</td><td>Inglés</td><td>Inglés</td></tr>
+            <tr><td class="hora">11:30</td><td id="recreo" colspan="5">recreo</td></tr>
+            <tr><td class="hora">12:00</td><td rowspan="3">Programación</td><td class="SSI">Sistemas</td><td rowspan="3">Contornos</td><td rowspan="2" class="BD">Bases de Datos</td><td rowspan="3">Programación</td></tr>
+            <tr><td class="hora">12:50</td><td rowspan="2">Lenguaje de Marcas</td></tr>
+            <tr><td class="hora">13:40</td><td rowspan="2">FOL</td></tr>
+            <tr id="tarde"><td class="hora">15:20</td><td colspan="5"></td></tr>
+        </table>
+        </div>
+    </body>
+</html>
