@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 24</title>
+    </head>
+    <body>
+        <form action="php.php" method="get">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="Usuario">Usuario: </label><input type="text" id="Usuario" placeholder="Nombre y apellidos"><br>
+                <input type="radio" name="tipoUsuario" id="Alumno" value="Alumno"> <label for="Alumno"> Alumno</label><br>
+                <input type="radio" name="tipoUsuario" id="Profesor" value="Profesor"> <label for="Profesor"> Profesor</label>
+            </fieldset>
+            <fieldset>
+                <legend>Dónde se produce</legend>
+                <input type="radio" name="lugar" id="Departamento" value="Departamento"> <label for="Departamento"> Todo el departamento</label><br>
+                <input type="radio" name="lugar" id="Aula" value="Aula"> <label for="Aula"> Todo el aula</label><br>
+                <input type="radio" name="lugar" id="Equipo" value="Equipo"> <label for="Equipo"> Sólo en un equipo</label><br>
+                <label for="Sitio">Identifica el departamento, aula o equipo: </label><input type="text" id="Sitio">
+            </fieldset>
+            <fieldset>
+                <legend>Información sobre la incidencia</legend>
+                <label for="descIncidencia">Descripción de la Incidencia</label><br>
+                <textarea id="descIncidencia" placeholder="Describe el problema con detalle" style="width: 100%; height:8em;"></textarea>
+                <label for="Urgencia">Nivel de urgencia:</label><br>
+                <input type="radio" name="urgencia" id="Alto" value="Alto"> <label for="Alto"> Alto</label><br>
+                <input type="radio" name="urgencia" id="Medio" value="Medio"> <label for="Medio"> Medio</label><br>
+                <input type="radio" name="urgencia" id="Bajo" value="Bajo"> <label for="Bajo"> Bajo</label><br>
+                <label for="Notificacion">Me gustaría ser avisado por email cuando se resuelva la incidencia </label><input type="checkbox" name="Notificacion" id="Notificacion" value="Notificacion" name="Notificacion" checked="checked">
+            </fieldset>
+            <input type="submit" Value="Entrar">
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>
