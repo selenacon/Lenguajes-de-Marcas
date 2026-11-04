@@ -1,0 +1,69 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 4</title>
+    </head>
+    <style>
+        #contenedorPrincipal {
+            border: 3px solid black;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contenedorSecundario {
+            border: 1px solid navy;
+            margin-bottom: 10px;
+        }
+        .subrayado {
+            color:green;
+            text-decoration: underline;
+        }
+        p {
+            margin: 0;
+        }
+        #seccion2 p {
+            text-align: right;
+            color:red;
+        }
+        #seccion2 em {
+            color: navy;
+            background-color:lemonchiffon;
+        }
+        #seccion3 p, #seccion4 p {
+            color:dimgray;
+        }
+        #seccion3 em {
+            color: yellow;
+            background-color: black;
+        }
+        #seccion4 {
+            text-align: right;
+        }
+        #seccion5 p {
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+        #seccion5 span {
+            color: lightblue;
+        }
+    </style>
+    <body>
+        <div id="contenedorPrincipal">
+            <div class="contenedorSecundario" id="seccion1">
+                <p class="subrayado">HTML & CSS: Curso práctico avanzado</p>
+            </div>
+            <div class="contenedorSecundario" id="seccion2">
+                <p>Aunque los inicios de <span class="subrayado">Internet</span> se remontan a los años sesenta, no ha sido hasta los años noventa cuando, gracias a la Web, se ha extendido su uso por todo el mundo. En pocos años, la Web ha evolucionado enormente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos estáticos que eran visitadas por unos pocos usuarios a <em>páginas complejas, con contenidos dinámicos que provienen de bases de datos y que son visitadas por miles de usuarios al mismo tiempo.</em></p>
+            </div>
+            <div class="contenedorSecundario" id="seccion3">
+                <p>Todas las páginas están internamente construidas con la misma tencnología, con el <em>Lenguaje de marcas de hipertexto</em> (<b>Hypertext Markup Language</b>, <span class="subrayado">HTML</span>) y con las <em>Hojas de estilo en cascada</em> (<b>Cascading Style Sheets</b>, <span class="subrayado">CSS</span>).</p>
+            </div>
+            <div class="contenedorSecundario" id="seccion4">
+                <p>Este libro es <em>adecuado para cualquiera que tenga interés en aprender a desarrollar sus propias páginas web. No son necesarios conocimientos previos para aprender con este libro, lo único que es necesario es saber utilizar un ordenador y saber navegar por la Web.</em></p>
+            </div>
+            <div id="seccion5">
+                <p>Esto es un div dentro de un div</p>
+                <p>Página cereada con <span>HTML</span></p>
+            </div>
+        </div>
+    </body>
+</html>

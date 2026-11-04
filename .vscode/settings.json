@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "UD2"
+        "UD2",
+        "UD2.2"
     ]
 }
