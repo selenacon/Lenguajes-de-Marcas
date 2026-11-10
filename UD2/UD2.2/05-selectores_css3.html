@@ -1,0 +1,51 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selectores CSS3</title>
+        <style>
+            #tarea1 p[lang^="e"] {
+                color: red;
+            }
+
+            #tarea2 p[lang$="n"] {
+                color: red;
+            }
+
+            #tarea3 a[title*="pdf"] {
+                font-size: 30px;
+            }
+
+            #tarea4 a[title|="Enunciado"] {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="tarea1" title="Coloreamos de rojo los párrafos de esta sección cuyo atributo lang empiece por e">
+            <h3>Coloreamos de rojo los párrafos de esta sección cuyo atributo lang empiece por e</h3>
+            <p lang="es">Hola Mundo</p>
+            <p lang="en">Hello World</p>
+            <p>Párrafo sin atributo lang</p>
+        </section>
+        <section id="tarea2" title="Coloreamos de rojo los párrafos de esta sección cuyo atributo lang acaben por n">
+            <h3>Coloreamos de rojo los párrafos de esta sección cuyo atributo lang acaben por n</h3>
+            <p lang="es">Hola Mundo</p>
+            <p lang="en">Hello World</p>
+            <p>Párrafo sin atributo lang</p>
+        </section>
+        <section id="tarea3" title="Cambiamos el tamaño al link que tenga en el atributo title la palabra pdf en cualquier sitio">
+            <h3>Cambiamos el tamaño al link que tenga en el atributo title la palabra pdf en cualquier sitio</h3>
+            <a href="pdf/Enunciado de la practica1.pdf" title="Enunciado en formato pdf de la práctica 1" target="_blank">Practica 1 en pdf</a>
+            <br/>
+            <a href="doc/Enunciado de la practica1.docx" title="Enunciado en otro formato de la práctica 1" target="_blank">Practica 1 en otro formato</a>
+        </section>
+        <section id="tarea4" title="Cambiamos el tamaño al link que tenga en el atributo title la palabra Enunciado o Enunciado seguida de guión medio">
+            <h3>Cambiamos el tamaño al link que tenga en el atributo title la palabra Enunciado o Enunciado seguida de guión medio</h3>
+            <a href="pdf/Enunciado de la practica1.pdf" title="Enunciado" target="_blank">Practica 1 en pdf</a>
+            <br/>
+            <a href="doc/Enunciado de la practica1.docx" title="Enunciado-" target="_blank">Practica 1 en formato docx</a>
+            <br/>
+            <a href="odt/Enunciado de la practica1.odt" title="Descripción del Enunciado" target="_blank">Practica 1 en formato odt</a>
+        </section>
+    </body>
+</html>
