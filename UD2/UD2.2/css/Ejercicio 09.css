@@ -1,0 +1,24 @@
+form {
+    width: 800px;
+    background-color: slategray;
+    border: 1px solid rgba(176, 196, 222, 0.10);
+    font-size: 12px;
+    font-family: Comic Sans MS;
+}
+
+legend::first-letter {
+    color: rgb(249, 106, 27);
+    font-size: 20px;
+}
+
+textarea:focus {
+    background-color: lightgreen;
+}
+
+textarea:focus:hover {
+    background-color: lightblue;
+}
+
+input[type="radio"][disabled="disabled"] + label {
+    color: #ddd;
+}

@@ -1,0 +1,30 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color:blue;
+    font-size: 20px;
+    text-align: center;
+}
+
+li >* {
+    font-size: 15px;
+}
+
+a {
+    color: #C00
+}
+
+a:hover {
+    background-color: #C00;
+    color: #FFF;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color:blue
+}
